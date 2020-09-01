@@ -1,0 +1,34 @@
+//Binet's Formula
+f^n-(-(f)^-1*n)/sqrt(5)  nearest integer for smaller values
+
+//CODEFORCES HACK    O(LOG(N) * LOG(LOG(N)))
+Use Map 
+int k=n/2;
+if(n is even) return f[n]= f[k]*f[k]+f[k-1]*f[k-1];
+else return f[n]= f[k]*f[k+1]+f[k]*f[k-1];
+
+---------------------------------------------------------------
+Zekendorf's Theorem
+Zeckendorf's theorem states that every positive integer
+can be represented uniquely as the sum of one or more 
+distinct Fibonacci numbers in such a way that the sum does 
+not include any two consecutive Fibonacci numbers.
+----------------------------------------------------------------------
+
+------------------------------------------------------------------------
+BINOMIAL COEFFICIENTS
+C(n,k) = C(n,n-k)
+C(n,k) = C(n-1,k-1) + C(n-1,k) //Pascal Triangle
+
+------------------------------------------------------------------------
+CATALAN SERIES
+Count no of BST having n nodes ? catalan[n]= no of BST with n nodes
+No of Binary Trees = n! * Catalan[n]
+Catalan[n] = C(2*n,n) /(n+1)
+
+Catalan[n] = sum(i=1 to n) Catalan[i-1] +Catalan[n-i]
+https://www.geeksforgeeks.org/applications-of-catalan-numbers/
+OEIS website
+---------------------------------------------------------------------------
+INCLUSION EXCLUSION PRINCIPLE
+odd terms minus and even terms plus
