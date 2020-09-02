@@ -1,0 +1,7 @@
+Step 1: Find the value of k . ex : f(i) = f(i-1) + f(i-4) ,k =4
+Step 2 : Find out the first k terms .and call this as F1 vector ex : [0 1] for fibonacci
+Step 3 : Find the transformation matrix 'T' (k X k)
+          such that T X Fi  = F(i+1)
+          ex for fibonacci T= [[0 1][1 1]]   Fi = [ F(i-2) F[i-1) ],   Fi+1 =  T X  Fi = [ F(i-1) F(i) ]
+          Fn =  pow( T, n-1) X F(1)
+          
